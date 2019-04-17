@@ -2,7 +2,7 @@
 var gulp = require('gulp'),
   path = require('path'),
   ngc = require('@angular/compiler-cli/src/main').main,
-  rollup = require('gulp-rollup'),
+  rollup = require('gulp-better-rollup'),
   rename = require('gulp-rename'),
   del = require('del'),
   runSequence = require('run-sequence'),
@@ -65,13 +65,13 @@ gulp.task('ngc', function () {
  *    generated file into the /dist folder
  */
 gulp.task('rollup:fesm', function () {
-  return gulp.src(`${buildFolder}/**/*.js`)
+  return gulp.src(`${buildFolder}/index.js`)
   // transform the files here.
     .pipe(rollup({
 
       // Bundle's entry point
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#entry
-      entry: `${buildFolder}/index.js`,
+      // input: `${buildFolder}/index.js`,
 
       // Allow mixing of hypothetical and actual files. "Actual" files can be files
       // accessed by Rollup or produced by plugins further down the chain.
@@ -91,7 +91,9 @@ gulp.task('rollup:fesm', function () {
 
       // Format of generated bundle
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#format
-      format: 'es',
+      output: {
+        format: 'es',
+      },
       onwarn: function (warning) {
         // Suppress this error message... there are hundreds of them. Angular team says to ignore it.
         // https://github.com/rollup/rollup/wiki/Troubleshooting#this-is-undefined
@@ -107,13 +109,13 @@ gulp.task('rollup:fesm', function () {
  *    generated file into the /dist folder
  */
 gulp.task('rollup:umd', function () {
-  return gulp.src(`${buildFolder}/**/*.js`)
+  return gulp.src(`${buildFolder}/index.js`)
   // transform the files here.
     .pipe(rollup({
 
       // Bundle's entry point
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#entry
-      entry: `${buildFolder}/index.js`,
+      // input: `${buildFolder}/index.js`,
 
       // Allow mixing of hypothetical and actual files. "Actual" files can be files
       // accessed by Rollup or produced by plugins further down the chain.
@@ -131,27 +133,27 @@ gulp.task('rollup:umd', function () {
         'rxjs/operators'
       ],
 
-      // Format of generated bundle
-      // See https://github.com/rollup/rollup/wiki/JavaScript-API#format
-      format: 'umd',
-
-      // Export mode to use
-      // See https://github.com/rollup/rollup/wiki/JavaScript-API#exports
-      exports: 'named',
-
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#modulename
-      moduleName: 'ngx-permissions',
-
-      // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
-      globals: {
-        typescript: 'ts',
-        '@angular/core': '_angular_core',
-        '@angular/router': '_angular_router',
-        'rxjs': 'rxjs',
-        'rxjs/operators': 'rxjs_operators'
+      output: {
+        name: 'ngx-permissions',
+        // Format of generated bundle
+        // See https://github.com/rollup/rollup/wiki/JavaScript-API#format
+        format: 'umd',
+        // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
+        globals: {
+          typescript: 'ts',
+          '@angular/core': '_angular_core',
+          '@angular/router': '_angular_router',
+          'rxjs': 'rxjs',
+          'rxjs/operators': 'rxjs_operators'
+        },
+        // Export mode to use
+        // See https://github.com/rollup/rollup/wiki/JavaScript-API#exports
+        exports: 'named',
       },
+
       onwarn: function (warning) {
           // Suppress this error message... there are hundreds of them. Angular team says to ignore it.
           // https://github.com/rollup/rollup/wiki/Troubleshooting#this-is-undefined
