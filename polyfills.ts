@@ -19,30 +19,30 @@ import 'core-js/es7/array';
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
-import 'rxjs/add/observable/throw';
-import 'rxjs/add/observable/forkJoin';
-import 'rxjs/add/observable/empty';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/observable/zip';
-import 'rxjs/add/observable/interval';
+// import 'rxjs/add/observable/throw';
+// import 'rxjs/add/observable/forkJoin';
+// import 'rxjs/add/observable/empty';
+// import 'rxjs/add/observable/of';
+// import 'rxjs/add/observable/zip';
+// import 'rxjs/add/observable/interval';
 
-import 'rxjs/add/operator/timeInterval';
-import 'rxjs/add/operator/take';
-import 'rxjs/add/operator/first';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/distinctUntilChanged';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/switchMap';
-import 'rxjs/add/operator/toPromise';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/mergeMap';
-import 'rxjs/add/operator/pairwise';
-import 'rxjs/add/operator/retryWhen';
-import 'rxjs/add/operator/finally';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/scan';
-import 'rxjs/add/operator/withLatestFrom';
+// import 'rxjs/add/operator/timeInterval';
+// import 'rxjs/add/operator/take';
+// import 'rxjs/add/operator/first';
+// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/debounceTime';
+// import 'rxjs/add/operator/distinctUntilChanged';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/switchMap';
+// import 'rxjs/add/operator/toPromise';
+// import 'rxjs/add/operator/do';
+// import 'rxjs/add/operator/mergeMap';
+// import 'rxjs/add/operator/pairwise';
+// import 'rxjs/add/operator/retryWhen';
+// import 'rxjs/add/operator/finally';
+// import 'rxjs/add/operator/filter';
+// import 'rxjs/add/operator/scan';
+// import 'rxjs/add/operator/withLatestFrom';
 
 
 /**
@@ -88,8 +88,8 @@ import 'rxjs/add/operator/withLatestFrom';
 
 
 /** Evergreen browsers require these. **/
-import 'core-js/es6/reflect';
-import 'core-js/es7/reflect';
+// import 'core-js/es6/reflect';
+// import 'core-js/es7/reflect';
 
 
 /** ALL Firefox browsers require the following to support `@angular/animation`. **/
@@ -100,7 +100,7 @@ import 'core-js/es7/reflect';
 /***************************************************************************************************
  * Zone JS is required by Angular itself.
  */
-import 'zone.js/dist/zone';  // Included with Angular CLI.
+// import 'zone.js/dist/zone';  // Included with Angular CLI.
 
 
 
