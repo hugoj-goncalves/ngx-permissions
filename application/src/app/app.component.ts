@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import { NgxPermissionsService, NgxPermissionsConfigurationService } from 'ngx-permissions';
+import { NgxPermissionsService, NgxPermissionsConfigurationService } from 'eks-ngx-permissions';
 
 @Component({
   selector: 'app-root',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxRolesService } from 'ngx-permissions';
+import { NgxRolesService } from 'eks-ngx-permissions';
 import { AsyncTestService } from '../async-test.service';
 
 @Component({

@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { NgxPermissionsGuard } from 'ngx-permissions';
+import { NgxPermissionsGuard } from 'eks-ngx-permissions';
 import { LazyRoleIsolateTestComponent } from './lazy-role-isolate-test/lazy-role-isolate-test.component';
 
 const appRoutes: Routes = [

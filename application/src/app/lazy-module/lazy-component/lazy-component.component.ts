@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxPermissionsConfigurationService } from 'ngx-permissions'
+import { NgxPermissionsConfigurationService } from 'eks-ngx-permissions'
 @Component({
   selector: 'app-lazy-component',
   templateUrl: './lazy-component.component.html',

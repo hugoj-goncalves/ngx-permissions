@@ -1,5 +1,5 @@
 {
-  "name": "ngx-permissions",
+  "name": "eks-ngx-permissions",
   "version": "6.0.5",
   "scripts": {
     "build": "gulp build",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexKhymenko/ngx-permissions"
+    "url": "https://github.com/hugoj-goncalves/ngx-permissions"
   },
   "author": {
     "name": "Oleksandr Khymenko",
@@ -55,7 +55,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexKhymenko/ngx-permissions/issues"
+    "url": "https://github.com/hugoj-goncalves/ngx-permissions/issues"
   },
   "devDependencies": {
     "@angular/common": "6.0.0-rc.5",

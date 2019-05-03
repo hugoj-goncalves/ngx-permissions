@@ -24,8 +24,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ngx-permissions.js",
-    "flatModuleId": "ngx-permissions"
+    "flatModuleOutFile": "eks-ngx-permissions.js",
+    "flatModuleId": "eks-ngx-permissions"
   },
   "files": [
     "./index.ts"

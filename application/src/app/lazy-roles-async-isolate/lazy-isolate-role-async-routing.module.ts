@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { NgxPermissionsGuard } from 'ngx-permissions';
+import { NgxPermissionsGuard } from 'eks-ngx-permissions';
 import { LazyRolesAsyncTestComponent } from './lazy-roles-async-test/lazy-roles-async-test.component';
 
 const appRoutes: Routes = [

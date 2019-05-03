@@ -142,7 +142,7 @@ gulp.task('rollup:umd', function () {
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#modulename
-      moduleName: 'ngx-permissions',
+      moduleName: 'eks-ngx-permissions',
 
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
       globals: {
@@ -159,7 +159,7 @@ gulp.task('rollup:umd', function () {
           console.error(warning.message);
       }
     }))
-    .pipe(rename('ngx-permissions.umd.js'))
+    .pipe(rename('eks-ngx-permissions.umd.js'))
     .pipe(gulp.dest(distFolder));
 });
 

@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { IsolateComponent } from './isolate/isolate.component';
-import { NgxPermissionsGuard } from 'ngx-permissions';
+import { NgxPermissionsGuard } from 'eks-ngx-permissions';
 
 const appRoutes: Routes = [
   { path: '',

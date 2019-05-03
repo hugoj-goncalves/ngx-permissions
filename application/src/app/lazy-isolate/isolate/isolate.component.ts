@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxPermissionsService } from 'ngx-permissions';
-import { NgxRolesService } from 'ngx-permissions';
+import { NgxPermissionsService } from 'eks-ngx-permissions';
+import { NgxRolesService } from 'eks-ngx-permissions';
 
 @Component({
   selector: 'app-isolate',

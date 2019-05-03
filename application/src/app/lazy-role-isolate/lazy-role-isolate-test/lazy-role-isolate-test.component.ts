@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2, TemplateRef } from '@angular/core';
-import { NgxRolesService, NgxPermissionsConfigurationService, NgxPermissionsService } from 'ngx-permissions';
+import { NgxRolesService, NgxPermissionsConfigurationService, NgxPermissionsService } from 'eks-ngx-permissions';
 
 @Component({
   selector: 'app-lazy-role-isolate-test',

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IsolateComponent } from './isolate/isolate.component';
-import { NgxPermissionsModule } from 'ngx-permissions';
+import { NgxPermissionsModule } from 'eks-ngx-permissions';
 import { LazyIsolateRoutingModule } from './lazy-isolate-routing.module';
 
 @NgModule({

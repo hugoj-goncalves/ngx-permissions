@@ -1,7 +1,7 @@
 import { ActivatedRouteSnapshot, RouterModule, RouterStateSnapshot, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
-import { NgxPermissionsGuard } from 'ngx-permissions';
+import { NgxPermissionsGuard } from 'eks-ngx-permissions';
 
 
 export function testPermissions(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {

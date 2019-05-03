@@ -61,7 +61,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { NgxPermissionsModule } from 'ngx-permissions';
+import { NgxPermissionsModule } from 'eks-ngx-permissions';
 
 @NgModule({
   declarations: [
@@ -128,7 +128,7 @@ Import service to the main application and load permissions
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { NgxPermissionsService } from 'ngx-permissions';
+import { NgxPermissionsService } from 'eks-ngx-permissions';
 import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
@@ -650,7 +650,7 @@ You can use `except` and `only` at the same time;
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
-import { NgxPermissionsGuard } from 'ngx-permissions';
+import { NgxPermissionsGuard } from 'eks-ngx-permissions';
 
 const appRoutes: Routes = [
   { path: 'home',
@@ -687,7 +687,7 @@ Often several permissions/roles are sufficient to allow/deny user to access the 
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
-import { NgxPermissionsGuard } from 'ngx-permissions';
+import { NgxPermissionsGuard } from 'eks-ngx-permissions';
 
 const appRoutes: Routes = [
   { path: 'home',
@@ -794,7 +794,7 @@ In case you want to redirect to some specific state when user is not authorized 
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
-import { NgxPermissionsGuard } from 'ngx-permissions';
+import { NgxPermissionsGuard } from 'eks-ngx-permissions';
 
 const appRoutes: Routes = [
   { path: 'home',

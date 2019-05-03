@@ -1,4 +1,4 @@
-import {NgxPermissionsAllowStubDirective} from 'ngx-permissions'
+import {NgxPermissionsAllowStubDirective} from 'eks-ngx-permissions'
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IsolateComponent } from './isolate.component';

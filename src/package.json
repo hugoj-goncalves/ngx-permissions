@@ -1,9 +1,9 @@
 {
-  "name": "ngx-permissions",
+  "name": "eks-ngx-permissions",
   "version": "6.0.5",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexKhymenko/ngx-permissions"
+    "url": "https://github.com/hugoj-goncalves/ngx-permissions"
   },
   "author": {
     "name": "Oleksandr Khymenko",
@@ -51,12 +51,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexKhymenko/ngx-permissions/issues"
+    "url": "https://github.com/hugoj-goncalves/ngx-permissions/issues"
   },
-  "main": "ngx-permissions.js",
-  "module": "ngx-permissions.js",
-  "jsnext:main": "ngx-permissions.js",
-  "typings": "ngx-permissions.d.ts",
+  "main": "eks-ngx-permissions.js",
+  "module": "eks-ngx-permissions.js",
+  "jsnext:main": "eks-ngx-permissions.js",
+  "typings": "eks-ngx-permissions.d.ts",
   "peerDependencies": {
     "@angular/core": ">=4.0.0 || >8.0.0",
     "@angular/router": ">=4.0.0 || >8.0.0",
