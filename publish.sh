@@ -33,6 +33,8 @@ if [ $? -eq 1 ]; then
 fi
 git push
 
+cd dist
+
 # npm config set scope @eklesia
 npm config set access public
 npm publish
