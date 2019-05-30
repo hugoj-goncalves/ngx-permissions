@@ -25,6 +25,9 @@ fi
 
 git pull origin master
 updateVersion
+cd src
+updateVersion
+cd -
 build
 
 git status | grep 'nothing to commit'

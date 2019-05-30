@@ -1,6 +1,6 @@
 {
   "name": "eks-ngx-permissions",
-  "version": "6.0.5",
+  "version": "6.0.8",
   "repository": {
     "type": "git",
     "url": "https://github.com/hugoj-goncalves/ngx-permissions"
